@@ -1,194 +1,52 @@
+<!DOCTYPE html>
 <html>
   <head>
-    <title>Dickson Chu</title>
+    <title>Tic Tac Toe</title>
     <meta charset="utf-8">
     <meta name="viewport" content="width=device-width, initial-scale=1">
-    <link rel="shortcut icon" href="favicon.ico" type="image/x-icon">
-    <link rel="stylesheet" href="assets/css/materialize.css" type="text/css" media="screen,projection">
-    <link rel="stylesheet" href="assets/css/styling.css" type="text/css">
-    <link rel="stylesheet" href="assets/css/main.css">
-    <link rel="stylesheet" href="https://use.fontawesome.com/releases/v5.5.0/css/all.css" 
-          integrity="sha384-B4dIYHKNBt8Bc12p+WXckhzcICo0wtJAoU8YZTY5qE0Id1GSseTk6S+L3BlXeVIU" 
-          crossorigin="anonymous"
-    >
-    <!-- Latest compiled and minified CSS -->
-    <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/css/bootstrap.min.css" 
-          integrity="sha384-BVYiiSIFeK1dGmJRAkycuHAHRg32OmUcww7on3RYdg4Va+PmSTsz/K68vbdEjh4u" 
-          crossorigin="anonymous"
-    >
-    <!-- Optional theme -->
-    <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/css/bootstrap-theme.min.css" 
-          integrity="sha384-rHyoN1iRsVXV4nD0JutlnGaslCJuC7uwjduW9SVrLvRYooPp2bWYgmgJQIXwl/Sp" 
-          crossorigin="anonymous"
-    >   
+
+    <link rel="stylesheet" href="./assets/css/main.css">
+    <link href="./assets/js/functions.js">
+
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.3.1/jquery.min.js"></script>
+    <script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/js/bootstrap.min.js" 
+            integrity="sha384-Tc5IQib027qvyjSMfHjOMaLkfuWVxZxUPnCJA7l2mCWNIpG9mGCD8wGNIcPD7Txa" 
+            crossorigin="anonymous">
+    </script>
   </head>
-  <body class="landing">
-    <div id="page-wrapper">
-      <!-- Header 
-      <header id="header" class="alt">
-        <h1><a href="index.html">Dickson Chu</a></h1>
-      </header> -->
 
-      <!-- Banner -->
-      <section id="banner">
-        <div class="inner">
-          <h2 style="color:white">Dickson Chu</h2>
-        </div>
-        <p class="more scrolly" style="color: white">Learn More</p>
-      </section>
-
-      <!-- About Section -->
-      <section id="about" class="wrapper style1 special">
-        <div class="inner">
-          <header class="major">
-            <h2>About</h2>
-            <div class="row bottom-buffer top-buffer">
-                <div class="appear">
-                  <center><img src="images/softwaredevelopment.png"></center>
-                </div>
-              </div>
-            <br>
-            <p><b> Soccer </b> • <b> Reading </b> • <b> Video-Gaming </b></p>
-            <p>Dickson is looking for a new position in software development.</p>
-          </header>
-        </div>
-      </section>
-
-      <!-- Education Section -->
-      <section id="education" class="wrapper style5 special">
-        <div class="inner">
-          <header class="major">
-            <h2>Education</h2>
-          </header>
-          <div class="row top-buffer">
-            <div>
-              <img class="education-img" src="images/cityu.png">
-            </div>
-            <div>
-              <h2>City University of Hong Kong</h2><h2>
-              </h2><h4>BBA in Accountancy</h4>
-              <p>Graduated in 2015</p>
-            </div>
-          </div>
-        </div>
-      </section>
-
-      <!-- Work Experience Section -->
-      <section id="work-experience" class="wrapper style3 special">
-        <div class="inner">
-          <header class="major">
-            <h2>Work Experience</h2>
-          </header>
-        </div>
-          <div class="row top-buffer">
-            <div class="col-md-4">
-              <div>
-                <img class="circular-impala center-block" src="images/impalacloud.png">
-              </div>
-            </div>
-            <div class="col-md-3 vcenter">
-              <h5><em>Business Analyst</em></h5>
-              <h4>Impala Cloud Limted</h4>
-              <h6>Hong Kong</h6>
-            </div>
-            <div class="col-md-4 vcenter">
-              <p>
-                Worked as a business analyst to provide financial & business 
-                analysis for a wide range of SMEs and create visualizations in 
-                order to enchance their sales performance.
-              </p>
-            </div>
-          </div>
-          <div class="row top-buffer">
-            <div class="col-md-4">
-              <div>
-                <img class="circular-kpmg center-block" src="images/kpmg.png">
-              </div>
-            </div>
-            <div class="col-md-3 vcenter">
-              <h5><em>Consultant</em></h5>
-              <h4>KPMG</h4>
-              <h6>Hong Kong</h6>
-            </div>
-            <div class="col-md-4 vcenter">
-              <p>Worked as a consultant to perform mark-to-market valuations of a variety of financial instruments.</p>
-            </div>
-          </div>
-          <div class="row top-buffer">
-            <div class="col-md-4">
-              <div>
-                <img class="circular-rsm center-block" src="images/rsm.png">
-              </div>
-            </div>
-            <div class="col-md-3 vcenter">
-              <h5><em>Audit & Assurance Intern</em></h5>
-              <h4>RSM Chio Lim LLP</h4>
-              <h6>Singapore</h6>
-            </div>
-            <div class="col-md-4 vcenter">
-              <p>Worked as an audit & assurance intern to conduct full audit procedures for multinational companies.</p>
-            </div>
-          </div>				
-      </section>
-
-    <!--Projects Section-->
-    <section id="projects" class="wrapper style2 special">
-      <div class="inner">
-        <header class="major">
-          <h2 style="color:white">Projects</h2>
-        </header>
-      </div>
-      <div class="row top-buffer">
-          <div class="text-center">
-            <center>
-            <img class="project-img" src="images/whenfree.png">
-            <h3 style="color:white">WhenFree</h3>
-            <h4 style="color:white"><a href="http://whenfree.events" target="_blank">More Info</a></h4>
-            <p style="color:white">Dickson is building a mobile app with React Native that solves 
-            <br>the problem brought by managing casual groups activities, both 
-            <br>public and private one.
-            </p>
-            </center>
-          </div>
-      </div>
-      </section>
-
-    <!-- CTA -->
-    <div id="contact">
-      <section id="cta" class="wrapper style4">
-        <div class="inner">
-          <header>
-            <h1 style="color:white">Contact</h1>
-            <p style="color:white">Email: <b> dicksonchuhk@gmail.com</b></p>
-          </header>
-        </div>
-      </section>
+  <body>
+    <div>
+      <h1>Tic Tac Toe with jQuery</h1>
     </div>
 
-    <!-- Footer -->
-    <footer id="footer">
-      <ul class="icons">
-        <li>
-          <a href="https://www.linkedin.com/in/dicksonchuhk">
-            <i class="fab fa-linkedin"></i>
-          </a>
-        </li>
-      </ul>
-      <ul class="copyright">
-        <li>© Dickson Chu 2018</li>
-      </ul>
-    </footer>
-  </div>
+    <!-- Three main buttons for the game -->
+    <div id="button">
+      <button class="button">Start</button>
+      <button class="button">Undo</button>
+      <button class="button">Reset</button>
+    </div>
 
-  <script src="https://cdnjs.cloudflare.com/ajax/libs/materialize/1.0.0/js/materialize.min.js"></script>
-  <script src="https://cdnjs.cloudflare.com/ajax/libs/skel/3.0.1/skel.min.js"></script>
-  <!-- Latest compiled and minified JavaScript -->
-      <script src="https://cdnjs.cloudflare.com/ajax/libs/jquery.scrollex/0.2.1/jquery.scrollex.min.js"></script>
-      <script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/js/bootstrap.min.js" 
-              integrity="sha384-Tc5IQib027qvyjSMfHjOMaLkfuWVxZxUPnCJA7l2mCWNIpG9mGCD8wGNIcPD7Txa" 
-              crossorigin="anonymous"></script>
-      <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.3.1/jquery.min.js"></script>
+    <!-- The grid/cell for the game -->
+    <div>
+      <table>
+          <tr>
+            <td></td>
+            <td class="vert"></td>
+            <td></td>
+          </tr>
+          <tr>
+            <td class="hori"></td>
+            <td class="vert hori"></td>
+            <td class="hori"></td>
+          </tr>
+          <tr>
+            <td></td>
+            <td class="vert"></td>
+            <td></td>
+          </tr>
+        </table>
+    </div>
 
-      <div class="hiddendiv common"></div>
   </body>
 </html>
