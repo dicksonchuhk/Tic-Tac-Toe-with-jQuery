@@ -1,5 +1,6 @@
 h1 {
   text-align: center;
+  font-family: 'Ubuntu', sans-serif;
 }
 #button {
   text-align: center;
@@ -11,8 +12,8 @@ h1 {
   border: none;
   padding: 10px 20px;
   color: aliceblue;
-  background-color: #d6a844;
   text-align: center;
+  font-family: 'Ubuntu', sans-serif;
 }
 td {
   width: 100px;
@@ -21,11 +22,52 @@ td {
 table {
   margin: 5px auto;
 }
-.vert {
+.vertical {
   border-left: 2px solid black;
   border-right: 2px solid black;
 }
-.hori {
+.horizontal {
   border-top: 2px solid black;
   border-bottom: 2px solid black;
+}
+.grids {
+  padding-top: 20px;
+}
+#start {
+  background-color: #d6a844;
+}
+#undo {
+  background-color: #447ed6;
+}
+#reset {
+  background-color: #d64450;
+}
+body .turn {
+  margin-bottom: 10px;
+}
+body table {
+  border-collapse: collapse;
+  width: 150px;
+  margin: 0 auto;
+}
+body table td {
+  width: 50px;
+  height: 50px;
+  border: 1px solid #555;
+  cursor: pointer;
+}
+body table td:before {
+  font-size: 1.5em;
+  line-height: 1;
+}
+body table td.cross:before {
+  content: "x";
+  color: lightblue;
+}
+body table td.circle:before {
+  content: "o";
+  color: pink;
+}
+body .reset:hover {
+  opacity: 0.8;
 }

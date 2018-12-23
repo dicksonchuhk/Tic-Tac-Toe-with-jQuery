@@ -6,7 +6,8 @@
     <meta name="viewport" content="width=device-width, initial-scale=1">
 
     <link rel="stylesheet" href="./assets/css/main.css">
-    <link href="./assets/js/functions.js">
+    <script type="text/javascript" src="./assets/js/main.js"></script>
+    <link href="https://fonts.googleapis.com/css?family=Ubuntu" rel="stylesheet">
 
     <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.3.1/jquery.min.js"></script>
     <script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/js/bootstrap.min.js" 
@@ -22,31 +23,32 @@
 
     <!-- Three main buttons for the game -->
     <div id="button">
-      <button class="button">Start</button>
-      <button class="button">Undo</button>
-      <button class="button">Reset</button>
+      <button id="start" class="button" type="button" value="start">Start</button>
+      <button id="undo" class="button" type="button" value="undo">Undo</button>
+      <button id="reset" class="button" type="button" value="reset">Reset</button>
     </div>
 
+    <div class="messages"></div>
+    <div class="turn"></div>
     <!-- The grid/cell for the game -->
-    <div>
+    <div class="grids">
       <table>
           <tr>
-            <td></td>
-            <td class="vert"></td>
-            <td></td>
+            <td class="item1"></td>
+            <td class="item2"></td>
+            <td class="item3"></td>
           </tr>
           <tr>
-            <td class="hori"></td>
-            <td class="vert hori"></td>
-            <td class="hori"></td>
+            <td class="item4"></td>
+            <td class="item5"></td>
+            <td class="item6"></td>
           </tr>
           <tr>
-            <td></td>
-            <td class="vert"></td>
-            <td></td>
+            <td class="item7"></td>
+            <td class="item8"></td>
+            <td class="item1"></td>
           </tr>
         </table>
     </div>
-
   </body>
 </html>
