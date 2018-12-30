@@ -1,6 +1,6 @@
 $(function() {
   
-  var player = 1;
+  var player = "X";
   var table = $('table');
   var messages = $('.messages');
   var turn = $('.turn');
@@ -25,7 +25,7 @@ $(function() {
   });
   
   $('.reset').click(function() {
-    player = 1;
+    player = "X";
     messages.html('');
     reset(table);
     displayNextPlayer(turn, player);
@@ -46,7 +46,7 @@ function changeState(td, pattern) {
 }
 
 function definePatternForCurrentPlayer(player) {
-  if(player == 1) {
+  if(player == "X") {
     return 'cross';
   } else {
     return 'circle';
@@ -54,10 +54,10 @@ function definePatternForCurrentPlayer(player) {
 }
 
 function setNextPlayer(player) {
-  if(player == 1) {
-    return player = 2;
+  if(player == "X") {
+    return player = "O";
   } else {
-    return player = 1;
+    return player = "X";
   }
 }
 

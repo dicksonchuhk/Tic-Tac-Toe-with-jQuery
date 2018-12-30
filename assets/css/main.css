@@ -1,3 +1,81 @@
+body {
+  font-family: "Roboto", Arial, sans-serif;
+  margin: 0 auto;
+  text-align: center;
+  margin-top: 50px;
+  color: #fff;
+  text-shadow: -1px -1px #333;
+  background: #333;
+}
+h1 {
+  font-weight: normal;
+  font-family: 'Ubuntu', sans-serif;
+}
+.turn {
+  margin-bottom: 10px;
+}
+body table {
+  border-collapse: collapse;
+  width: 300px;
+  margin: 0 auto;
+}
+table td {
+  width: 100px;
+  height: 100px;
+  border: 1px solid #555;
+  cursor: pointer;
+}
+table td:before {
+  font-size: 6.25em;
+  vertical-align: middle;
+  text-align: center;
+  line-height: 1;
+}
+table td.cross:before {
+  content: "x";
+  color: lightblue;
+}
+table td.circle:before {
+  content: "o";
+  color: pink;
+}
+/*
+.start {
+  background: #d6a844;
+  border: 1px solid #d6a844;
+  border-radius: 10px;
+  padding: 10px 20px;
+  color: #fff;
+  cursor: pointer;
+  font-family: 'Ubuntu', sans-serif;
+  text-transform: uppercase;
+}
+.undo {
+  background: #447ed6;
+  border: 1px solid #447ed6;
+  border-radius: 10px;
+  padding: 10px 20px;
+  color: #fff;
+  cursor: pointer;
+  font-family: 'Ubuntu', sans-serif;
+  text-transform: uppercase;
+}
+*/
+.reset {
+  background: #d64450;
+  border: 1px solid #d64450;
+  border-radius: 10px;
+  padding: 10px 20px;
+  color: #fff;
+  cursor: pointer;
+  font-family: 'Ubuntu', sans-serif;
+  text-transform: uppercase;
+}
+.start:hover, .undo:hover, .reset:hover {
+  opacity: 0.8;
+}
+
+/*
 h1 {
   text-align: center;
   font-family: 'Ubuntu', sans-serif;
@@ -62,12 +140,13 @@ body table td:before {
 }
 body table td.cross:before {
   content: "x";
-  color: lightblue;
+  color: blue;
 }
 body table td.circle:before {
   content: "o";
-  color: pink;
+  color: red;
 }
 body .reset:hover {
   opacity: 0.8;
 }
+*/
