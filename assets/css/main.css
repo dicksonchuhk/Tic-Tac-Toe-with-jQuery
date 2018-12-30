@@ -39,28 +39,6 @@ table td.circle:before {
   content: "o";
   color: pink;
 }
-/*
-.start {
-  background: #d6a844;
-  border: 1px solid #d6a844;
-  border-radius: 10px;
-  padding: 10px 20px;
-  color: #fff;
-  cursor: pointer;
-  font-family: 'Ubuntu', sans-serif;
-  text-transform: uppercase;
-}
-.undo {
-  background: #447ed6;
-  border: 1px solid #447ed6;
-  border-radius: 10px;
-  padding: 10px 20px;
-  color: #fff;
-  cursor: pointer;
-  font-family: 'Ubuntu', sans-serif;
-  text-transform: uppercase;
-}
-*/
 .reset {
   background: #d64450;
   border: 1px solid #d64450;
@@ -74,79 +52,3 @@ table td.circle:before {
 .start:hover, .undo:hover, .reset:hover {
   opacity: 0.8;
 }
-
-/*
-h1 {
-  text-align: center;
-  font-family: 'Ubuntu', sans-serif;
-}
-#button {
-  text-align: center;
-}
-.button {
-  margin: auto;
-  width: 10%;
-  border-radius: 10px;
-  border: none;
-  padding: 10px 20px;
-  color: aliceblue;
-  text-align: center;
-  font-family: 'Ubuntu', sans-serif;
-}
-td {
-  width: 100px;
-  height: 100px;
-}
-table {
-  margin: 5px auto;
-}
-.vertical {
-  border-left: 2px solid black;
-  border-right: 2px solid black;
-}
-.horizontal {
-  border-top: 2px solid black;
-  border-bottom: 2px solid black;
-}
-.grids {
-  padding-top: 20px;
-}
-#start {
-  background-color: #d6a844;
-}
-#undo {
-  background-color: #447ed6;
-}
-#reset {
-  background-color: #d64450;
-}
-body .turn {
-  margin-bottom: 10px;
-}
-body table {
-  border-collapse: collapse;
-  width: 150px;
-  margin: 0 auto;
-}
-body table td {
-  width: 50px;
-  height: 50px;
-  border: 1px solid #555;
-  cursor: pointer;
-}
-body table td:before {
-  font-size: 1.5em;
-  line-height: 1;
-}
-body table td.cross:before {
-  content: "x";
-  color: blue;
-}
-body table td.circle:before {
-  content: "o";
-  color: red;
-}
-body .reset:hover {
-  opacity: 0.8;
-}
-*/
